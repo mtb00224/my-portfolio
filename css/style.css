@@ -1,0 +1,203 @@
+html{
+	--my-blue: #2eb0f0;
+	--blanc: #FFFFFF;
+	--noire: black;
+}
+
+/* gestion du css commun à tous les fichiers */
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 99.8%;
+}
+body{	
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	text-align: center;
+	flex-grow: 1;
+/*	background-image: url("../img/vite.jpg");*/
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: #111;		
+}
+
+
+div.my-image{
+	margin-right: 1%;
+}
+div img{
+	border-radius: 50%;
+	float: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a.menu{
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+	font-size: 1em;
+	text-transform: uppercase;
+	
+}
+
+a.menu:hover{
+	color: var(--my-blue);
+	opacity: 0.9;	
+	border-radius: 2px;
+	transition: color .5s;
+	background-color: black;
+	transition: background-color 1s;
+}
+a.menu:active{
+	color: white;
+	border: none;
+	transition: color 1s,background-color 0.1s,border 0.2s;
+}
+
+.blanc{
+	color: var(--blanc);
+}
+.bleu{
+	color: var(--my-blue);
+}
+
+a.sous-menu:hover{
+	color: var(--my-blue);
+}
+
+/* gestion du css pour le fichier index */
+p{
+	font-size: 10px;
+	color: white;
+}
+
+h2.h2{
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+.taille{
+	font-size: 15px;
+}
+
+.dans{
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 7%;
+}
+.texte_intacte{
+	color: white;
+	font-size: 3em;
+}
+.texte_mobile{
+	color: var(--my-blue);
+	font-size: 1em;
+}
+
+div.canvas{
+	background-color: white;
+	width: 70%;
+	margin: 20px;	
+}
+
+.titre{
+	color: var(--blanc);
+}
+
+div.section-commune{
+	color: var(--blanc);
+	text-align: left;
+	margin-left: 10%;
+	font-size: 1.4em;
+}
+
+section.canvas{
+	background-color: whitesmoke;
+}
+
+li span.niveau{
+	color: var(--my-blue);
+	font-weight: bold;
+}
+
+.affichage-aleatoire{
+	text-align: center;
+}
+span.commun{
+	font-size: 70px;
+}
+.un{
+	color: white;
+}
+.auto{
+	color: var(--my-blue);
+}
+div p.immobile{
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+}
+
+/* gestion du css pour le footer */
+
+footer{
+	text-align: center;
+	height: 15vh;
+	font-family: monospace;
+	background-color: white;
+	font-size: 1em;
+	font-weight: bold;	
+	color: var(--my-blue);
+	transition: background-color 1.5s;
+}
+
+/* partie responsive du site */
+@media screen and (max-width : 400px){	
+	nav ul li a.menu{					
+		font-size: 1.1em;
+	}
+
+	ul{
+		padding: 0;
+		margin: 0;
+	}	
+
+	section.canvas{
+		background-color: white;
+		width: 100%;
+		height: auto;
+/*		margin: 20px;*/
+	}
+
+	ul.ul{
+		margin-right: 10px;
+	}
+
+	section{
+		font-size: 15px;
+	}
+
+	p.taille{
+		font-size: 15px;
+	}
+
+	span.texte_intacte{
+		font-size: 30px;		
+	}
+
+	span.texte_mobile{
+		font-size: 25px;
+	}
+}

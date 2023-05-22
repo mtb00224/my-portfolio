@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="css/style.css?sjskldhdj">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title>apropos</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+				    <a class="nav-link active menu" aria-current="page" href="index.html">Acceuil</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link menu" href="#">Apropos</a>
+				</li>			
+			</ul>			
+		</nav>
+	</header>
+	
+	<main class="content">
+		<div class="affichage-aleatoire">
+			<p class="reduire-taille">
+				<span class="texte commun un reduire-taille">
+					Je suis <span class="auto commun texte"></span>
+				</span>
+			</p>
+		</div>
+
+		<div>
+			<p class="immobile reduire-taille">
+				Je suis un étudiant en licence 3 (<b>L3</b>) en <strong>informatique</strong>(<i>génie logiciel</i>)<br> à l'<b>E</b>cole <b>S</b>upérieure <b>P</b>olytechnique de <br>
+				l'<b>U</b>niversité <b>C</b>heikh <b>A</b>nta <b>D</b>iop de <b>D</b>akar.
+
+			</p>
+		</div>
+	</main>	
+	<footer class="reduire-taille">
+		<span>Ce sont les informations de M. Mamadou Tahirou Bah</span><br>
+		<span>N'hésitez pas à me contacter à l'adresse : <a href="mailto:mamadoutahiroubah@esp.sn">mamadoutahiroubah@esp.sn</a> </span><br>
+		<span>pour en savoir plus sur moi</span>
+	</footer>	
+	
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script type="text/javascript">
+		let date = new Date()		
+		let age = date.getFullYear() - 2000 - 1
+
+		var typed = new Typed(".auto",{
+			strings: [
+				'Mamadou Tahirou Bah',
+				"âgé de "+age+" ans",				
+			],
+			typeSpeed:200,
+			backSpeed:10000,
+			loop:true,
+			fadeOut:true
+		})
+	</script>
+</body>
+</html>

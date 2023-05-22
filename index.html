@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<title></title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+				    <a class="nav-link active menu" aria-current="page" href="#">Acceuil</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link menu" href="apropos.html">Apropos</a>
+				</li>			
+			</ul>			
+		</nav>
+	</header>	
+
+	<main class="content">
+		<div class="my-image">
+			<img src="img/modifie.jpg">	
+		</div>
+
+		<nav>
+			<center>
+				<a href="#competences" class="blanc sous-menu">Compétences</a>
+				<a href="#projets" class="blanc sous-menu">Projets</a>
+				<a href="#experiences" class="blanc sous-menu">Experience</a>		
+			</center>			
+		</nav>
+		<h2 class="blanc h2">Bienvenue dans mon site-web personnel</h2>
+		<section class="welcome-info">
+			<div class="welcome-info">
+				<p class="dans">
+					Dans ce site :
+				</p>
+				<p>
+					<span class="texte_intacte">Vous trouverez des informations sur :<br> <span class="auto_1 texte_mobile"></span></span><br>			
+				</p>				
+			</div>
+		</section>
+
+		<center>
+			<section class="canvas">
+				<h3 class="bleu" id="competences">Mes compétences</h3>
+				<div class="canvas">
+					<canvas id="canvas-bar" arial-label="chart" role="img">
+					
+					</canvas>
+					<canvas id="canvas-cercle" arial-label="chart" role="img">
+					
+					</canvas>
+				</div>												
+			</section>
+		</center>		
+
+		<section class="projets">
+			<h3 class="bleu" id="projets">Mes projets</h3>		
+			<div class="projets section-commune">
+				<ul class="ul">
+					<li>Gestion des utilisateurs (CRUD) en PHP</li>
+					<li>Creation de la plateforme islam-pour-tous en PHP</li>
+					<li>
+						Digitalisation des restaurants des differentes localités et facilier la communication client-server en Django
+					</li>
+				</ul>
+			</div>						
+		</section>
+
+		<!-- <section class="parcours-scolaire">
+			<h3 class="bleu" id="formations">Parcours académique</h3>
+			<div class="parcours-scolaire section-commune">
+				<ul>
+					<li>
+						2022 - 2023 :
+						<span class="niveau">Licence 3</span> École Supérieure Polytechnique de l'Université Cheick Anta Diop de Dakar.					
+					</li>
+					<li>
+						2021 - 2022 :
+						<span class="niveau">Licence 2</span> École Supérieure Polytechnique de l'Université Cheick Anta Diop de Dakar.					
+					</li>
+					<li>
+						2020 - 2021 :
+						<span class="niveau">Licence 1</span> École Supérieure Polytechnique de l'Université Cheick Anta Diop de Dakar.					
+					</li>
+					<li>
+						2019 - 2020 :
+						<span class="niveau">Baccalauréat</span> A l'Institut Privé Mahatma Gandhi.					
+					</li>
+				</ul>												
+			</div>									
+		</section> -->
+
+		<section class="experience">			
+			<h3 class="bleu" id="experiences">Experience professionnelle</h3>
+			<div class="experience section-commune">				
+				<p class="blanc taille">J'ai effectué un stage : </p>		
+				<ul class="ul">
+					<li>											
+						<span class="lieu">
+							A la Direction de l'Information des Systemes Informatique (DISI) de l'Université Cheikh Anta Diop : 
+						</span> du 
+						<span class="date bleu">08/082022</span> au <span class="date bleu">30/09/2022</span>
+						<p class="detail-experience taille">
+							Durant cette periode j'ai eu à travaillé en tant que developpeur sur une application desktop pour la gestion des cartes à puce de l'université
+						</p>
+					</li>
+					<li>						
+						<span class="lieu">
+							Au support IT du service informatique de l'Hopital Nationale Donka : 
+						</span> du 
+						<span class="date bleu">08/082022</span> au <span class="date bleu">30/09/2022</span>
+						<p class="detail-experience taille">
+							Durant cette période j'ai travaillé en tant qu'assistant administrateur réseau
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>	
+	<footer>
+		<span>Ce sont les informations de M. Mamadou Tahirou Bah</span><br>
+		<span>N'hésitez pas à me contacter à l'adresse : <a href="mailto:mamadoutahiroubah@esp.sn">mamadoutahiroubah@esp.sn</a> </span><br>
+		<span>pour en savoir plus sur moi</span>
+	</footer>	
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+	<script type="text/javascript">
+		const canvas = document.getElementById("canvas-bar")
+		const canvas_cercle = document.getElementById("canvas-cercle")
+		canvas_cercle.style.display = "none"
+
+		var largeur_fenetre = window.innerWidth
+		var hauteur_fenetre = window.innerHeight		
+
+		if(largeur_fenetre <= 700){
+			canvas.style.display = "none"
+			canvas_cercle.style.display = "block"			
+		}
+
+
+		// gestion aleatoire du texte avec Typed js
+		var typed_1 = new Typed(".auto_1",{
+			strings: [
+				'mes données personnelles','mon parcours académique','mon experience professionnelle','mes projets réalisés'
+			],
+			typeSpeed:100,
+			backSpeed:10000,
+			loop:true,
+			fadeOut:true
+		})
+
+		// gestion du graphe avec Chart js		
+		const graphe = new Chart(canvas, {
+			type: "bar",
+			data: {
+				labels: ["HTM","CSS","JS","PYTHON","DJANGO","PHP","LARAVEL","JAVA"],
+				datasets: [{
+					data: [80,60,50,50,30,40,10,30],
+					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0"],					
+				}]
+			},
+			options:{
+				scales:{
+					x:{						
+						ticks: {
+							font:{
+								size:10,								
+							}
+						}
+					},
+					y:{	
+						suggestedMax : 100,					
+						ticks: {
+							font:{
+								size:10,							
+							}
+						}
+					},
+				}
+			}
+		})
+
+		const graphe2 = new Chart(canvas_cercle, {
+			type: "pie",
+			data: {
+				labels: ["HTM","CSS","JS","PYTHON","DJANGO","PHP","LARAVEL","JAVA"],
+				datasets: [{
+					data: [80,60,50,50,30,40,10,30],
+					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0"],					
+				}]
+			}			
+		})
+	</script>
+
+</body>
+</html>
