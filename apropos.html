@@ -3,47 +3,108 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<link rel="stylesheet" type="text/css" href="css/style.css?sjskldhdj">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome-web/css/fontawesome.min.css">
+	<link rel="stylesheet" href="fontawesome-web/css/brands.min.css">
 	<title>apropos</title>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-				    <a class="nav-link active menu" aria-current="page" href="index.html">Acceuil</a>
-				</li>
-				<li class="nav-item">
-				    <a class="nav-link menu" href="#">Apropos</a>
-				</li>			
-			</ul>			
-		</nav>
+	<header>				
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand bleu" href="index.html">Home</a>
+				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link menu" aria-current="page" href="parcours.html">Parcours Scolaire</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu" href="apropos.html">About me</a>
+						</li>														
+					</ul>
+				</div>
+			</div>
+		</nav>							
 	</header>
 	
-	<main class="content">
-		<div class="affichage-aleatoire">
-			<p class="reduire-taille">
-				<span class="texte commun un reduire-taille">
-					Je suis <span class="auto commun texte"></span>
-				</span>
-			</p>
-		</div>
+	<main class="container-fluid">
+		<section class="h-auto">
+			<div class="affichage-aleatoire">
+				<p class="fs-3">
+					<span class="text-white">Je suis</span> <br>
+					<span class="auto"></span>
+				</p>
+			</div>
 
-		<div>
-			<p class="immobile reduire-taille">
-				Je suis un étudiant en licence 3 (<b>L3</b>) en <strong>informatique</strong>(<i>génie logiciel</i>)<br> à l'<b>E</b>cole <b>S</b>upérieure <b>P</b>olytechnique de <br>
-				l'<b>U</b>niversité <b>C</b>heikh <b>A</b>nta <b>D</b>iop de <b>D</b>akar.
-
-			</p>
-		</div>
+			<div class="mt-3">
+				<p class="text-white fs-3 text-start text-md-center text-lg-center">
+					un étudiant (<b>L3</b>) en <strong>informatique</strong>(<i>génie logiciel</i>)<br> à l'<b>E</b>cole <b>S</b>upérieure <b>P</b>olytechnique de <br>
+					l'<b>U</b>niversité <b>C</b>heikh <b>A</b>nta <b>D</b>iop de <b>D</b>akar <span class="bleu">(ESP-UCAD)</span>.
+				</p>
+				<p class="text-white fs-3 text-start text-md-center text-lg-center">
+					Je suis un jeune africain passionné par les nouvelles technlogies en allant de 
+					l'intelligence artificielle<span class="bleu">(IA)</span> aux cryptos monaie<span class="bleu">(BLOCKCHAIN)</span> en passant par l'internet des objets<span class="bleu">(IOT)</span>.
+				</p>
+			</div>
+		</section>
 	</main>	
-	<footer class="reduire-taille">
-		<span>Ce sont les informations de M. Mamadou Tahirou Bah</span><br>
-		<span>N'hésitez pas à me contacter à l'adresse : <a href="mailto:mamadoutahiroubah@esp.sn">mamadoutahiroubah@esp.sn</a> </span><br>
-		<span>pour en savoir plus sur moi</span>
-	</footer>	
-	
+	<footer class="text-start text-md-center text-lg-center">
+		<div class="row">
+			<div class="col-6 col-md-4 col-lg-4">
+				<h3>Adresse</h3>
+				<p>
+					Sénégal, Dakar
+				</p>
+			</div>
+			<div class="col-6 col-md-4 col-lg-4">
+				<h3>Reseau</h3>
+				<ul class="text-start">
+					<li>
+						<a href="https://www.linkedin.com/in/mamadou-tahirou-bah-2b3667208/" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-linkedin"></i>
+							Linkedin
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/MTB00224" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-twitter"></i>
+							Twitter
+						</a>
+					</li>
+					<li>
+						<a href="https://wa.me/221777835436" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-whatsapp"></i>
+							WhatsApp
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/mtb00224" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-github"></i>
+							github
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6 col-md-4 col-lg-4">
+				<h3>Compétences</h3>
+				<ul class="text-start">
+					<li>Developpeur web fullstack</li>
+					<li>Developpeur Mobile - android</li>
+				</ul>				
+			</div>
+		</div>
+		<!-- <p><span>Ce sont les informations de</span> <br> <span class="bleu text-center">M. Mamadou Tahirou Bah</span></p> -->
+		<p>N'hésitez pas à utiliser l'adresse : 
+			<a href="mailto:mamadoutahiroubah397@gmail.com" class="bleu">mamadoutahiroubah397@gmail.com</a> 
+			pour me contacter pour en savoir plus sur moi
+		</p>		
+	</footer>
+
+	<script src="js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script type="text/javascript">
 		let date = new Date()		

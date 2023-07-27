@@ -3,49 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome-web/css/fontawesome.min.css">
+	<link rel="stylesheet" href="fontawesome-web/css/brands.min.css">
+	<title>home</title>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-				    <a class="nav-link active menu" aria-current="page" href="#">Acceuil</a>
-				</li>
-				<li class="nav-item">
-				    <a class="nav-link menu" href="apropos.html">Apropos</a>
-				</li>			
-			</ul>			
-		</nav>
+	<header>				
+		<nav class="navbar navbar-expand-lg bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand bleu" href="index.html">Home</a>
+				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link menu" aria-current="page" href="parcours.html">Parcours Scolaire</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link menu" href="apropos.html">About me</a>
+						</li>														
+					</ul>
+				</div>
+			</div>
+		</nav>							
 	</header>	
 
-	<main class="content">
-		<div class="my-image">
-			<img src="img/modifie.jpg">	
-		</div>
-
-		<nav>
-			<center>
-				<a href="#competences" class="blanc sous-menu">Compétences</a>
-				<a href="#projets" class="blanc sous-menu">Projets</a>
-				<a href="#experiences" class="blanc sous-menu">Experience</a>		
-			</center>			
-		</nav>
-		<h2 class="blanc h2">Bienvenue dans mon site-web personnel</h2>
-		<section class="welcome-info">
-			<div class="welcome-info">
-				<p class="dans">
-					Dans ce site :
-				</p>
-				<p>
-					<span class="texte_intacte">Vous trouverez des informations sur :<br> <span class="auto_1 texte_mobile"></span></span><br>			
-				</p>				
+	<main class=" text-center">
+		<section style="height: 20%;">
+			<div>			
+				<a href="#competences" class="bleu sous-menu">Compétences</a>
+				<a href="#projets" class="bleu sous-menu">Projets</a>
+				<a href="#experiences" class="bleu sous-menu">Experience</a>								
 			</div>
-		</section>
-
+			<div class="my-image m-2">			
+				<img src="img/modifie.jpg">	
+			</div>						
+			<h2 class="text-white text-start text-md-center text-lg-center">Bienvenue dans mon site-web personnel</h2>										
+			<div class="">
+				<p class="texte_intacte fs-4 text-start">Dans ce site vous trouverez des informations sur :</p>
+				<span class="auto_1 texte_mobile fs-5 fw-bold"></span>		
+			</div>											
+		</section>			
 		<center>
 			<section class="canvas">
 				<h3 class="bleu" id="competences">Mes compétences</h3>
@@ -57,46 +58,24 @@
 					
 					</canvas>
 				</div>												
-			</section>
-		</center>		
-
+			</section>	
+		</center>
 		<section class="projets">
 			<h3 class="bleu" id="projets">Mes projets</h3>		
 			<div class="projets section-commune">
 				<ul class="ul">
 					<li>Gestion des utilisateurs (CRUD) en PHP</li>
-					<li>Creation de la plateforme islam-pour-tous en PHP</li>
+					<li>Creation de la plateforme islam-pour-tous en PHP <span class="fs-6">(projet personnel pour aider la communauté musulmane)</span></li>
+					<li>Mise en oeuvre d'une application desktop de gestion des cartes à puces <span class="fs-6">(pour la DISI de l'UCAD)</span></li>
+					<li>
+						Création d'une plateforme de gestion d'un etablissment hotelier <span class="fs-6">(pour une entreprise ivoirienne)</span>
+					</li>
 					<li>
 						Digitalisation des restaurants des differentes localités et facilier la communication client-server en Django
 					</li>
 				</ul>
 			</div>						
-		</section>
-
-		<!-- <section class="parcours-scolaire">
-			<h3 class="bleu" id="formations">Parcours académique</h3>
-			<div class="parcours-scolaire section-commune">
-				<ul>
-					<li>
-						2022 - 2023 :
-						<span class="niveau">Licence 3</span> École Supérieure Polytechnique de l'Université Cheick Anta Diop de Dakar.					
-					</li>
-					<li>
-						2021 - 2022 :
-						<span class="niveau">Licence 2</span> École Supérieure Polytechnique de l'Université Cheick Anta Diop de Dakar.					
-					</li>
-					<li>
-						2020 - 2021 :
-						<span class="niveau">Licence 1</span> École Supérieure Polytechnique de l'Université Cheick Anta Diop de Dakar.					
-					</li>
-					<li>
-						2019 - 2020 :
-						<span class="niveau">Baccalauréat</span> A l'Institut Privé Mahatma Gandhi.					
-					</li>
-				</ul>												
-			</div>									
-		</section> -->
-
+		</section>		
 		<section class="experience">			
 			<h3 class="bleu" id="experiences">Experience professionnelle</h3>
 			<div class="experience section-commune">				
@@ -106,7 +85,7 @@
 						<span class="lieu">
 							A la Direction de l'Information des Systemes Informatique (DISI) de l'Université Cheikh Anta Diop : 
 						</span> du 
-						<span class="date bleu">08/082022</span> au <span class="date bleu">30/09/2022</span>
+						<span class="date bleu">01/06/2022</span> au <span class="date bleu">15/07/2022</span>
 						<p class="detail-experience taille">
 							Durant cette periode j'ai eu à travaillé en tant que developpeur sur une application desktop pour la gestion des cartes à puce de l'université
 						</p>
@@ -115,7 +94,7 @@
 						<span class="lieu">
 							Au support IT du service informatique de l'Hopital Nationale Donka : 
 						</span> du 
-						<span class="date bleu">08/082022</span> au <span class="date bleu">30/09/2022</span>
+						<span class="date bleu">08/08/2022</span> au <span class="date bleu">30/09/2022</span>
 						<p class="detail-experience taille">
 							Durant cette période j'ai travaillé en tant qu'assistant administrateur réseau
 						</p>
@@ -124,11 +103,57 @@
 			</div>
 		</section>
 	</main>	
-	<footer>
-		<span>Ce sont les informations de M. Mamadou Tahirou Bah</span><br>
-		<span>N'hésitez pas à me contacter à l'adresse : <a href="mailto:mamadoutahiroubah@esp.sn">mamadoutahiroubah@esp.sn</a> </span><br>
-		<span>pour en savoir plus sur moi</span>
-	</footer>	
+	<footer class="text-start text-md-center text-lg-center">
+		<div class="row">
+			<div class="col-6 col-md-4 col-lg-4">
+				<h3>Adresse</h3>
+				<p>
+					Sénégal, Dakar
+				</p>
+			</div>
+			<div class="col-6 col-md-4 col-lg-4">
+				<h3>Reseau</h3>
+				<ul class="text-start">
+					<li>
+						<a href="https://www.linkedin.com/in/mamadou-tahirou-bah-2b3667208/" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-linkedin"></i>
+							Linkedin
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/MTB00224" class="text-decoration-none bleu" target="_blank">
+							<i class="fa-brands fa-twitter"></i>
+							Twitter
+						</a>
+					</li>
+					<li>
+						<a href="https://wa.me/221777835436" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-whatsapp"></i>
+							WhatsApp
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/mtb00224" target="_blank" class="text-decoration-none bleu">
+							<i class="fa-brands fa-github"></i>
+							github
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6 col-md-4 col-lg-4">
+				<h3>Compétences</h3>
+				<ul class="text-start">
+					<li>Developpeur web fullstack</li>
+					<li>Developpeur Mobile - android</li>
+				</ul>				
+			</div>
+		</div>
+		<!-- <p><span>Ce sont les informations de</span> <br> <span class="bleu text-center">M. Mamadou Tahirou Bah</span></p> -->
+		<p>N'hésitez pas à utiliser l'adresse : 
+			<a href="mailto:mamadoutahiroubah397@gmail.com" class="bleu">mamadoutahiroubah397@gmail.com</a> 
+			pour me contacter pour en savoir plus sur moi
+		</p>		
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
@@ -161,9 +186,9 @@
 		const graphe = new Chart(canvas, {
 			type: "bar",
 			data: {
-				labels: ["HTM","CSS","JS","PYTHON","DJANGO","PHP","LARAVEL","JAVA"],
+				labels: ["HTM","CSS","JS","React js","PYTHON","DJANGO","PHP","LARAVEL"],
 				datasets: [{
-					data: [80,60,50,50,30,40,10,30],
+					data: [80,60,50,10,50,30,40,10,30],
 					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0"],					
 				}]
 			},
@@ -191,9 +216,9 @@
 		const graphe2 = new Chart(canvas_cercle, {
 			type: "pie",
 			data: {
-				labels: ["HTM","CSS","JS","PYTHON","DJANGO","PHP","LARAVEL","JAVA"],
+				labels: ["HTM","CSS","JS","React js","PYTHON","DJANGO","PHP","LARAVEL"],
 				datasets: [{
-					data: [80,60,50,50,30,40,10,30],
+					data: [80,60,50,10,50,30,40,10],
 					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0"],					
 				}]
 			}			
