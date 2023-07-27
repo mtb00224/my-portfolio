@@ -31,8 +31,8 @@
 		</nav>							
 	</header>	
 
-	<main class=" text-center">
-		<section style="height: 20%;">
+	<main>
+		<section>
 			<div>			
 				<a href="#competences" class="bleu sous-menu">Compétences</a>
 				<a href="#projets" class="bleu sous-menu">Projets</a>
@@ -50,7 +50,7 @@
 		<center>
 			<section class="canvas">
 				<h3 class="bleu" id="competences">Mes compétences</h3>
-				<div class="canvas">
+				<div class="canvas row offset-10">
 					<canvas id="canvas-bar" arial-label="chart" role="img">
 					
 					</canvas>
@@ -60,10 +60,10 @@
 				</div>												
 			</section>	
 		</center>
-		<section class="projets">
-			<h3 class="bleu" id="projets">Mes projets</h3>		
+		<section class="mx-2">					
 			<div class="projets section-commune">
-				<ul class="ul">
+				<h3 class="bleu text-center" id="projets">Mes projets</h3>
+				<ul class="fs-5">
 					<li>Gestion des utilisateurs (CRUD) en PHP</li>
 					<li>Creation de la plateforme islam-pour-tous en PHP <span class="fs-6">(projet personnel pour aider la communauté musulmane)</span></li>
 					<li>Mise en oeuvre d'une application desktop de gestion des cartes à puces <span class="fs-6">(pour la DISI de l'UCAD)</span></li>
@@ -74,20 +74,18 @@
 						Digitalisation des restaurants des differentes localités et facilier la communication client-server en Django
 					</li>
 				</ul>
-			</div>						
-		</section>		
-		<section class="experience">			
-			<h3 class="bleu" id="experiences">Experience professionnelle</h3>
+			</div>											
 			<div class="experience section-commune">				
-				<p class="blanc taille">J'ai effectué un stage : </p>		
+				<h3 class="bleu text-center" id="experiences">Experience professionnelle</h3>
+				<p class="fs-6">J'ai effectué un stage : </p>		
 				<ul class="ul">
 					<li>											
 						<span class="lieu">
 							A la Direction de l'Information des Systemes Informatique (DISI) de l'Université Cheikh Anta Diop : 
 						</span> du 
 						<span class="date bleu">01/06/2022</span> au <span class="date bleu">15/07/2022</span>
-						<p class="detail-experience taille">
-							Durant cette periode j'ai eu à travaillé en tant que developpeur sur une application desktop pour la gestion des cartes à puce de l'université
+						<p class="fs-6">
+							Durant cette periode j'ai eu à travaillé en tant que developpeur sur une application desktop pour la gestion des cartes à puce de l'université.
 						</p>
 					</li>
 					<li>						
@@ -95,24 +93,22 @@
 							Au support IT du service informatique de l'Hopital Nationale Donka : 
 						</span> du 
 						<span class="date bleu">08/08/2022</span> au <span class="date bleu">30/09/2022</span>
-						<p class="detail-experience taille">
-							Durant cette période j'ai travaillé en tant qu'assistant administrateur réseau
+						<p class="fs-6">
+							Durant cette période j'ai travaillé en tant qu'assistant administrateur réseau.
 						</p>
 					</li>
 				</ul>
 			</div>
 		</section>
-	</main>	
-	<footer class="text-start text-md-center text-lg-center">
+	</main>		
+	<footer class="text-start text-md-center text-lg-center mx-3">
 		<div class="row">
-			<div class="col-6 col-md-4 col-lg-4">
+			<div class="col-12 col-md-4 col-lg-4">
 				<h3>Adresse</h3>
-				<p>
-					Sénégal, Dakar
-				</p>
+				<p>Sénégal, Dakar</p>				
 			</div>
-			<div class="col-6 col-md-4 col-lg-4">
-				<h3>Reseau</h3>
+			<div class="col-12 col-md-4 col-lg-4">
+				<h3>Reseau</h3>				
 				<ul class="text-start">
 					<li>
 						<a href="https://www.linkedin.com/in/mamadou-tahirou-bah-2b3667208/" target="_blank" class="text-decoration-none bleu">
@@ -140,18 +136,17 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-6 col-md-4 col-lg-4">
+			<div class="col-12 col-md-4 col-lg-4">
 				<h3>Compétences</h3>
 				<ul class="text-start">
 					<li>Developpeur web fullstack</li>
 					<li>Developpeur Mobile - android</li>
 				</ul>				
 			</div>
-		</div>
-		<!-- <p><span>Ce sont les informations de</span> <br> <span class="bleu text-center">M. Mamadou Tahirou Bah</span></p> -->
+		</div>		
 		<p>N'hésitez pas à utiliser l'adresse : 
 			<a href="mailto:mamadoutahiroubah397@gmail.com" class="bleu">mamadoutahiroubah397@gmail.com</a> 
-			pour me contacter pour en savoir plus sur moi
+			pour me contacter.
 		</p>		
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -186,10 +181,10 @@
 		const graphe = new Chart(canvas, {
 			type: "bar",
 			data: {
-				labels: ["HTM","CSS","JS","React js","PYTHON","DJANGO","PHP","LARAVEL"],
+				labels: ["HTML","CSS","JS","React js","PYTHON","DJANGO","PHP","LARAVEL","LATEX"],
 				datasets: [{
-					data: [80,60,50,10,50,30,40,10,30],
-					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0"],					
+					data: [80,60,50,10,50,30,40,10,30,25],
+					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0","#34495E"],					
 				}]
 			},
 			options:{
@@ -216,10 +211,10 @@
 		const graphe2 = new Chart(canvas_cercle, {
 			type: "pie",
 			data: {
-				labels: ["HTM","CSS","JS","React js","PYTHON","DJANGO","PHP","LARAVEL"],
+				labels: ["HTML","CSS","JS","React js","PYTHON","DJANGO","PHP","LARAVEL","LATEX"],
 				datasets: [{
-					data: [80,60,50,10,50,30,40,10],
-					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0"],					
+					data: [80,60,50,10,50,30,40,10,25],
+					backgroundColor: ["red","yellow","green","black","orange","blue","gray","#de98f0","#34495E"],					
 				}]
 			}			
 		})
